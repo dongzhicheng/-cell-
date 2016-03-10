@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell{
 
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel! //对应的属性
     
     @IBOutlet weak var ageLabel: UILabel!
     
@@ -20,15 +20,19 @@ class TableViewCell: UITableViewCell{
     override func awakeFromNib() {
 
         super.awakeFromNib()
+        
+         heardIamge.userInteractionEnabled = true
+        
+         let tapGR = UITapGestureRecognizer(target: self, action: Selector("tapHandler"))
 
-
+         heardIamge.addGestureRecognizer(tapGR)
+        
     }
 
-
+    func tapHandler() {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationEnter, object: nil)
+        
+    }
     
-}
-extension TableViewCell{
-
-
-
 }

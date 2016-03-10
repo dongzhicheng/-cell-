@@ -17,13 +17,20 @@ class secondTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
- 
         
+        heardIamge.userInteractionEnabled = true
         
-        
+        let tapGR = UITapGestureRecognizer(target: self, action: Selector("tapHandl"))
+    
+        heardIamge.addGestureRecognizer(tapGR) //给hradImage添加手势识别器
+    
     }
-
-
+    func tapHandl(){
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("secondTableViewCellNoti", object: nil)
+    
+    }
     
 }

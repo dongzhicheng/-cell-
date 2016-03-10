@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DNN-7K-iYg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KxT-AJ-KBm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellIdentif" rowHeight="162" id="eZX-DH-VeV" customClass="TableViewCell" customModule="简单的小案例" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eZX-DH-VeV" id="3VE-eY-kKw">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
@@ -32,7 +32,7 @@
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="kjK-0u-eJ4"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qF2-A8-VLH">
@@ -50,9 +50,16 @@
                                                 <constraint firstAttribute="width" constant="155" id="XaD-xO-aZS"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.1716456405" green="0.1692727202" blue="0.56581315450000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ome-mQ-Hkw">
+                                            <rect key="frame" x="110" y="60" width="127" height="30"/>
+                                            <state key="normal" title="下一个控制器"/>
+                                            <connections>
+                                                <action selector="btnClick:" destination="DNN-7K-iYg" eventType="touchUpInside" id="QTg-5E-CE5"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="qF2-A8-VLH" secondAttribute="bottom" constant="38" id="1cf-tF-qqx"/>
@@ -91,7 +98,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="secondTableViewCellIdentif" rowHeight="162" id="96x-mQ-Vfe" customClass="secondTableViewCell" customModule="简单的小案例" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="190" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="254" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="96x-mQ-Vfe" id="C1R-sM-sKV">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
@@ -104,7 +111,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="DZL-8G-QcB"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-of-bvU" userLabel="age">
@@ -114,7 +121,7 @@
                                                 <constraint firstAttribute="width" constant="155" id="l63-2X-HcI"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.1716456405" green="0.1692727202" blue="0.56581315450000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-fn-rGx">
@@ -159,11 +166,31 @@
                             <outlet property="delegate" destination="DNN-7K-iYg" id="4s0-fJ-FAN"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="sma-OK-5jO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwe-Op-TUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210.5" y="146.5"/>
+            <point key="canvasLocation" x="1834.5" y="146.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9rP-zV-LcE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KxT-AJ-KBm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YaK-wL-wyX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DNN-7K-iYg" kind="relationship" relationship="rootViewController" id="WMW-ah-5xC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1v-Zi-FNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="146"/>
         </scene>
     </scenes>
 </document>
