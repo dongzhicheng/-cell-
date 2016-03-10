@@ -29,7 +29,7 @@ class secondTableViewCell: UITableViewCell {
     }
     func tapHandl(){
         
-        NSNotificationCenter.defaultCenter().postNotificationName("secondTableViewCellNoti", object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("secondTableViewCellNoti", object: nil)//发送通知消息
     
     }
     

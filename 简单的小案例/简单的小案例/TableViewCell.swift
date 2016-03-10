@@ -11,9 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell{
 
     @IBOutlet weak var nameLabel: UILabel! //对应的属性
-    
     @IBOutlet weak var ageLabel: UILabel!
-    
     @IBOutlet weak var heardIamge: UIImageView!
     
     
@@ -21,17 +19,17 @@ class TableViewCell: UITableViewCell{
 
         super.awakeFromNib()
         
-         heardIamge.userInteractionEnabled = true
+         heardIamge.userInteractionEnabled = true //打开交互，让heardImage可以响应事件
         
-         let tapGR = UITapGestureRecognizer(target: self, action: Selector("tapHandler"))
-
-         heardIamge.addGestureRecognizer(tapGR)
+         let tapGR = UITapGestureRecognizer(target: self, action: Selector("tapHandler")) //绑定方法
         
+         heardIamge.addGestureRecognizer(tapGR) //添加手势识别器
+    
     }
 
     func tapHandler() {
         
-        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationEnter, object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationEnter, object: nil) //点击heardImage发送对应的通知
         
     }
     

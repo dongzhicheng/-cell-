@@ -62,17 +62,17 @@ class ViewController: UITableViewController {
         [self.navigationController?.pushViewController(secondViewController(), animated:true)]
         
     }
-    
+    //返回多少组
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         return 1
     }
-    
+    //返回每组对应多少个cell
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return numZu.count
     }
-    
+    //返回怎样的cell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if tem == "tem" {
@@ -86,7 +86,6 @@ class ViewController: UITableViewController {
             cell.ageLabel.text = String(str)  //获取age数据
             
             cell.heardIamge.image = numZu[indexPath.row].heardimage
-            
             
             tem = "temfirstCell"
             
@@ -109,7 +108,6 @@ class ViewController: UITableViewController {
             
             return cell
         }
-        
     }
     
     
